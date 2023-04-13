@@ -23,9 +23,8 @@ app.post("/chat", async (req, res) => {
   const completion = await openai.createCompletion({
     model: "text-davinci-003",
     prompt: prompt,
+    max_tokens: 1000,
   });
-
-  console.log(completion);
 
   // Concatenate all the suggested completions into a single string
   const fullResponse = completion.data.choices

@@ -1,5 +1,9 @@
+/* Use a mobile-first approach */
+/* Default styles for all screens */
 body {
-  margin: 0, auto;
+  margin: 0;
+  font-size: 16px; /* 1rem = 16px */
+  font-family: 'Roboto', sans-serif;
 }
 
 .navbar {
@@ -19,7 +23,6 @@ body {
   text-align: center;
   margin-top: 3%;
   font-size: 3rem;
-  font-family: 'Roboto', sans-serif;
 }
 
 .first-container {
@@ -27,53 +30,54 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh; /* Use min-height instead of height */
+  width: 100%;
+  padding: 2rem; /* Add some padding to all sides */
 }
 
 .form-container {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;  
-border: solid 1px black;
-height: 25vh;
-width: 50vw;
-border-radius: 25px;
-margin: 10 0; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+  border-radius: 25px;
+  width: 50vw; /* Use percentages instead of fixed pixels */
+  max-width: 500px; /* Add a max-width for larger screens */
+  margin: 2rem 0;
+  padding: 2rem;
 }
 
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .text-container {
-  width: 40vw;
+  width: 100%;
   height: 10vh;
   border: solid 1px black;
   border-radius: 25px;
   font-size: 1.5rem;
-  font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  margin: 0 15px;
-  text-indent: 2rem;
+  margin: 2% 0;
+  padding: 0.5rem; /* Add some padding to all sides */
 }
 
 input:focus {
   outline: none;
 }
 
-
 .btn {
   border: solid 1px black;
   border-radius: 25px;
-  width: 20vw;
+  width: 100%;
+  max-width: 300px; /* Add a max-width for larger screens */
   height: 5vh;
-  margin: 2vh;
+  margin: 2vh 0;
   font-size: 1.5rem;
-  font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 
@@ -83,37 +87,70 @@ input:focus {
 }
 
 .answer-container {
-  height: 50vh;
-  width: 50vw;
+  width: 90%;
+  max-width: 500px; /* Add a max-width for larger screens */
+  height: auto;
   border: solid 1px black;
   border-radius: 25px;
-  margin: 2vh;
-  font-family: 'Roboto', sans-serif;
+  margin: 2vh 0;
+  padding: 2rem;
   font-weight: 300;
+  overflow: hidden;
 }
 
 .answer {
-  margin: 2vh;
-  text-indent: 2rem;
-  font-size: 1.5rem;
+  margin: 2vh 0;
+  font-size: 1rem;
+  line-height: 1.7;
 }
 
 .about-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;  
+  justify-content: center;
   align-items: center;
-  height: 50vh;
-  width: 50vw;
+  width: 90%;
+  max-width: 500px; /* Add a max-width for larger screens */
+  height: auto;
   border: solid 1px black;
   border-radius: 25px;
-  margin: 2vh;
+  margin: 2vh 0;
+  padding: 2rem;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
-.about-text {
-  margin: 2vh;
-  padding: 2vh;
-  text-indent: 2rem;
+.about-text,
+.about-text2 {
+  margin: 2vh 0;
+  padding: 2vh 0;
+  line-height: 1.7;
 }
+
+.about-text2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    }
+    
+    .contact-link {
+    text-decoration: none;
+    color: black;
+    padding: 1vh;
+    }
+    
+    .contact-title {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: black;
+    border: solid 1px;
+    border-radius: 15px;
+    padding: 2vh;
+    }
+    
+    .contact-title:hover {
+    background-color: teal;
+    color: white;
+    }
 
 
