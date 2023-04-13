@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Dash from './components/dash';
 import NavBar from './components/navbar';
+import About from './components/about';
 import './App.css';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={ < Dash /> } />
+          <Route path="/about" element={ < About /> } />
         </Routes>
       </Router>
     </div>

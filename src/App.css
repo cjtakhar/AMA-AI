@@ -17,6 +17,9 @@ body {
 
 .title {
   text-align: center;
+  margin-top: 3%;
+  font-size: 3rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 .first-container {
@@ -29,25 +32,88 @@ body {
 }
 
 .form-container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
+border: solid 1px black;
+height: 25vh;
 width: 50vw;
+border-radius: 25px;
+margin: 10 0; 
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .text-container {
   width: 40vw;
-  height: 5vh;
+  height: 10vh;
+  border: solid 1px black;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  margin: 0 15px;
+  text-indent: 2rem;
 }
 
+input:focus {
+  outline: none;
+}
+
+
 .btn {
-  border: solid 1px black;;
-  width: 8vw;
-  height: 6vh;
-  margin: 1vh;
+  border: solid 1px black;
+  border-radius: 25px;
+  width: 20vw;
+  height: 5vh;
+  margin: 2vh;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.btn:hover {
+  background-color: teal;
+  color: white;
 }
 
 .answer-container {
   height: 50vh;
   width: 50vw;
-  border: solid 2px black;
+  border: solid 1px black;
+  border-radius: 25px;
+  margin: 2vh;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
+
+.answer {
+  margin: 2vh;
+  text-indent: 2rem;
+  font-size: 1.5rem;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;
+  height: 50vh;
+  width: 50vw;
+  border: solid 1px black;
+  border-radius: 25px;
+  margin: 2vh;
+}
+
+.about-text {
+  margin: 2vh;
+  padding: 2vh;
+  text-indent: 2rem;
+}
+
+
