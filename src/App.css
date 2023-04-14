@@ -43,7 +43,7 @@ body {
   border: solid 1px black;
   border-radius: 25px;
   width: 60vw; /* Use percentages instead of fixed pixels */
-  max-width: 75vw; /* Add a max-width for larger screens */
+  max-width: 50vw; /* Add a max-width for larger screens */
   margin: 2rem 0;
   padding: 2rem;
 }
@@ -88,7 +88,7 @@ input:focus {
 }
 
 .answer-container {
-  width: 60vw;
+  width: 50vw;
   max-width: 70vw; /* Add a max-width for larger screens */
   height: auto;
   border: solid 1px black;
@@ -159,5 +159,11 @@ input:focus {
     background-color: teal;
     color: white;
     }
-
-
+  
+    @media only screen and (max-width: 768px) {
+      .form-container, .answer-container, .first-container {
+        width: 95%;
+        max-width: none;
+      }
+    }
+    
