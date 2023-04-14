@@ -72,7 +72,8 @@ input:focus {
 }
 
 .btn {
-  border: solid 1px black;
+  border: solid 1px white;
+  background-color: teal;
   border-radius: 25px;
   width: 100%;
   max-width: 300px; /* Add a max-width for larger screens */
@@ -80,6 +81,7 @@ input:focus {
   margin: 2vh 0;
   font-size: 1.5rem;
   font-weight: 300;
+  color: white;
 }
 
 .btn:hover {

@@ -24,7 +24,7 @@ function Dash() {
         <h1 className="title">Hello.</h1>
         <div className="form-container">
           <form onSubmit={handleSubmit} className="form">
-            <input className="text-container" type="text" value={prompt} onChange={(e) => setPrompt(e.target.value)} />
+            <input className="text-container" type="text" placeholder="ask me anything" value={prompt} onChange={(e) => setPrompt(e.target.value)}  style={{ textAlign: 'center' }} />
             <button type="submit" className="btn" onClick={handleSubmit}>ENTER</button>
           </form>
         </div>
