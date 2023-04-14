@@ -9,8 +9,8 @@ export default function NavBar() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav>
-                        <Nav.Link className="navLink" href="/about">About</Nav.Link>
-                        <Nav.Link className="navLink" href="/contact">Contact</Nav.Link>
+                        <Nav.Link className="navLink" href="/AMA-AI/about">About</Nav.Link>
+                        <Nav.Link className="navLink" href="/AMA-AI/contact">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </div>

@@ -9,9 +9,9 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Router>
+      <Router basename="/AMA-AI">
         <Routes>
-          <Route path="/AMA-AI" element={ < Dash /> } />
+          <Route path="/" element={ < Dash /> } />
           <Route path="/about" element={ < About /> } />
           <Route path="/contact" element= { < Contact /> } />
         </Routes>
