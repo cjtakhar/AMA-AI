@@ -21,7 +21,7 @@ app.post("/chat", async (req, res) => {
 
   // Generate a response with ChatGPT
   const completion = await openai.createCompletion({
-    model: "gpt-3.5-turbo-0301",
+    model: "text-davinci-003",
     prompt: prompt,
     max_tokens: 1000,
   });

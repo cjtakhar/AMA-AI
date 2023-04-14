@@ -160,9 +160,16 @@ input:focus {
     color: white;
     }
   
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 980px) {
       .form-container, .answer-container, .first-container {
         width: 95%;
+        max-width: none;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      .form-container, .answer-container, .first-container {
+        width: 100%;
         max-width: none;
       }
     }
