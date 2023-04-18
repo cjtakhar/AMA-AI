@@ -3,10 +3,14 @@ FROM node:14
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm run build
+RUN npm install
 
 COPY . .
+RUN npm run build
+
+COPY server.js .
 
 EXPOSE 8080
 
-CMD [ "npm", "start" ]
+CMD [ "node", "server.js" ]
+
