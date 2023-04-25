@@ -14,6 +14,8 @@ function Dash() {
       })
       .catch((err) => {
         console.log(err);
+        console.log("Error message: ", err.message);
+        console.log("Stack trace: ", err.stack);
       });
       setPrompt('');
   };
