@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/AMA-AI/static/css/main.f9c0b8e3.css",
-    "main.js": "/AMA-AI/static/js/main.a5f38211.js",
+    "main.js": "/AMA-AI/static/js/main.7dc44c22.js",
     "static/js/787.987d9cf9.chunk.js": "/AMA-AI/static/js/787.987d9cf9.chunk.js",
     "index.html": "/AMA-AI/index.html",
     "main.f9c0b8e3.css.map": "/AMA-AI/static/css/main.f9c0b8e3.css.map",
-    "main.a5f38211.js.map": "/AMA-AI/static/js/main.a5f38211.js.map",
+    "main.7dc44c22.js.map": "/AMA-AI/static/js/main.7dc44c22.js.map",
     "787.987d9cf9.chunk.js.map": "/AMA-AI/static/js/787.987d9cf9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f9c0b8e3.css",
-    "static/js/main.a5f38211.js"
+    "static/js/main.7dc44c22.js"
   ]
 }
