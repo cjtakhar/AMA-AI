@@ -72,16 +72,18 @@ input:focus {
 }
 
 .btn {
-  border: solid 1px white;
   background-color: teal;
-  border-radius: 25px;
-  width: 100%;
-  max-width: 300px; /* Add a max-width for larger screens */
-  height: 5vh;
-  margin: 2vh 0;
-  font-size: 1.5rem;
-  font-weight: 300;
+  border: none;
   color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  width: 15vw;
 }
 
 .btn:hover {
