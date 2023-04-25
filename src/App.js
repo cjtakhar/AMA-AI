@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Router basename="/AMA">
+      <Router basename="/AMA-AI">
         <Routes>
           <Route path="/" element={ < Dash /> } />
           <Route path="/about" element={ < About /> } />
