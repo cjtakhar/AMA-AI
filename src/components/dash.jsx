@@ -8,7 +8,7 @@ function Dash() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    axios.post("https://ama-ai-mqz55tjj3a-uw.a.run.app/", { prompt })
+    axios.post("https://ama-ai-mqz55tjj3a-uw.a.run.app/", { prompt }, { withCredentials: true })
       .then((res) => {
         setResponse(res.data);
       })
