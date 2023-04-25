@@ -8,7 +8,7 @@ function Dash() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    axios.post("http://localhost:8080/chat", { prompt })
+    axios.post("https://ama-ai-server-mqz55tjj3a-uc.a.run.app/chat", { prompt })
       .then((res) => {
         setResponse(res.data);
       })
