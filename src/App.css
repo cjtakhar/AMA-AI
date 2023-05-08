@@ -1,9 +1,7 @@
-/* Use a mobile-first approach */
-/* Default styles for all screens */
 body {
   margin: 0;
   font-size: 16px; /* 1rem = 16px */
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .navbar {
@@ -65,6 +63,10 @@ body {
   margin: 2% 0;
   padding: 0.5rem; /* Add some padding to all sides */
   text-indent: 2%;
+}
+
+.text-container:focus::placeholder {
+  opacity: 0;
 }
 
 input:focus {
@@ -139,44 +141,54 @@ input:focus {
 }
 
 .about-text2 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    }
-    
-    .contact-link {
-    text-decoration: none;
-    color: black;
-    padding: 1vh;
-    }
-    
-    .contact-title {
-    font-size: 2rem;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    color: black;
-    border: solid 1px;
-    border-radius: 15px;
-    padding: 2vh;
-    }
-    
-    .contact-title:hover {
-    background-color: teal;
-    color: white;
-    }
-  
-    @media only screen and (max-width: 980px) {
-      .form-container, .answer-container, .first-container {
-        width: 95%;
-        max-width: none;
-      }
-    }
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 
-    @media only screen and (max-width: 768px) {
-      .form-container, .answer-container, .first-container {
-        width: 100%;
-        max-width: none;
-      }
-      .btn {
-        min-width: 30vw;
-      }
-    }
+.contact-link {
+  text-decoration: none;
+  color: black;
+  padding: 1vh;
+}
+
+.contact-title {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: black;
+  border: solid 1px;
+  border-radius: 15px;
+  padding: 2vh;
+}
+
+.contact-title:hover {
+  background-color: teal;
+  color: white;
+}
+
+@media only screen and (max-width: 980px) {
+  .form-container,
+  .answer-container,
+  .first-container {
+    width: 95%;
+    max-width: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .form-container,
+  .answer-container,
+  .first-container {
+    width: 100%;
+    max-width: none;
+  }
+  .btn {
+    min-width: 30vw;
+  }
+
+  .about-container {
+    width: 100%;
+    max-width: none;
+    margin-top: 2vh;
+  }
+}
