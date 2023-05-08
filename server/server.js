@@ -38,7 +38,7 @@ app.post("/chat", async (req, res) => {
     .map((choice) => choice.text)
     .join("");
     
-  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.setHeader('Access-Control-Allow-Origin', '*');
   res.send(fullResponse);
 });
 
