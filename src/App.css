@@ -176,5 +176,7 @@ input:focus {
         width: 100%;
         max-width: none;
       }
+      .btn {
+        min-width: 30vw;
+      }
     }
-    
