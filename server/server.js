@@ -13,7 +13,10 @@ const openai = new OpenAIApi(configuration);
 // Set up the server
 const app = express();
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({
+  origin: "http://localhost:3000",
+  credentials: true,
+}));
 
 // Set up the ChatGPT endpoint
 app.post("/chat", async (req, res) => {
@@ -40,4 +43,5 @@ const port = 8080;
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
+
 
