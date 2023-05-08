@@ -4,7 +4,6 @@ const bodyParser = require("body-parser");
 const { Configuration, OpenAIApi } = require("openai");
 require("dotenv").config({ path: "../.env" });
 
-
 const configuration = new Configuration({
   apiKey: process.env.API_KEY,
 });
@@ -17,6 +16,10 @@ app.use(cors({
   origin: "http://localhost:3000",
   credentials: true,
 }));
+
+app.get("/", (req, res) => {
+  res.send("Server is up and running.");
+});
 
 // Set up the ChatGPT endpoint
 app.post("/chat", async (req, res) => {
@@ -34,7 +37,8 @@ app.post("/chat", async (req, res) => {
   const fullResponse = completion.data.choices
     .map((choice) => choice.text)
     .join("");
-
+    
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
   res.send(fullResponse);
 });
 
