@@ -187,6 +187,9 @@ input:focus {
     width: 95%;
     max-width: none;
   }
+  .btn {
+    min-width: 30vw;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -197,7 +200,7 @@ input:focus {
     max-width: none;
   }
   .btn {
-    min-width: 30vw;
+    min-width: 50vw;
   }
   .first-container {
     margin-top: 80px;
@@ -213,5 +216,9 @@ input:focus {
 @media only screen and (max-width: 480px) {
   .first-container {
     padding: none;
+  }
+
+  .text-container {
+    border: solid 1px;
   }
 }
