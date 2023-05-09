@@ -19,8 +19,9 @@ body {
 
 .title {
   text-align: center;
-  margin-top: 5vh;
+  margin-top: 3%;
   font-size: 3rem;
+  margin-top: 6%;
 }
 
 .first-container {
@@ -28,8 +29,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 80vh;
+  width: 100%;
   margin-top: 5vh;  
 }
 
@@ -113,8 +113,8 @@ input:focus {
 
 .about-title {
   text-align: center;
+  margin-top: 6%;
   font-size: 3rem;
-  margin-top: 5vh;
 }
 
 .about-container {
