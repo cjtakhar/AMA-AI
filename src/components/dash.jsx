@@ -11,6 +11,7 @@ function Dash() {
     axios.post("http://localhost:8080/chat", { prompt }, { withCredentials: true })
       .then((res) => {
         setResponse(res.data);
+        document.activeeElement.blur();
       })
       .catch((err) => {
         console.log(err);
