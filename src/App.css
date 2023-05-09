@@ -63,11 +63,10 @@ body {
   font-size: 1.5rem;
   font-weight: 100;
   margin: 2% 0;
-  padding: 0.5rem; /* Add some padding to all sides */
+  padding: 0.5rem;
   text-indent: 2%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3);
 }
-
 .text-container:focus::placeholder {
   opacity: 0;
 }
@@ -216,9 +215,5 @@ input:focus {
 @media only screen and (max-width: 480px) {
   .first-container {
     padding: none;
-  }
-
-  .text-container {
-    border: solid 1px;
   }
 }
