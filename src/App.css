@@ -211,9 +211,6 @@ input:focus {
     max-width: none;
     border: none;
   }
-  .text-container {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3) !important;
-  }
 }
 
 @media only screen and (max-width: 480px) {
