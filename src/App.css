@@ -29,7 +29,6 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 2rem;
   margin-top: 5vh;  
 }
 
@@ -123,9 +122,8 @@ input:focus {
   justify-content: center;
   align-items: center;
   width: 90%;
-  max-width: 500px; /* Add a max-width for larger screens */
+  max-width: 500px;
   height: auto;
-  border: solid 1px black;
   border-radius: 25px;
   padding: 2rem;
   overflow: hidden;
@@ -201,5 +199,11 @@ input:focus {
     width: 100%;
     max-width: none;
     border: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .first-container {
+    padding: none;
   }
 }
