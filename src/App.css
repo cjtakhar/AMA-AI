@@ -28,9 +28,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Use min-height instead of height */
   width: 100%;
-  padding: 2rem; /* Add some padding to all sides */
+  padding: 2rem;
+  margin-top: 5vh;  
 }
 
 .form-container {
@@ -40,8 +40,8 @@ body {
   align-items: center;
   border: solid 1px black;
   border-radius: 25px;
-  width: 60vw; /* Use percentages instead of fixed pixels */
-  max-width: 50vw; /* Add a max-width for larger screens */
+  width: 60vw;
+  max-width: 50vw;
   margin: 2rem 0;
   padding: 2rem;
 }
@@ -127,7 +127,6 @@ input:focus {
   height: auto;
   border: solid 1px black;
   border-radius: 25px;
-  margin: 2vh 0;
   padding: 2rem;
   overflow: hidden;
   overflow-y: scroll;
@@ -149,6 +148,15 @@ input:focus {
   text-decoration: none;
   color: black;
   padding: 1vh;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 50vh;
 }
 
 .contact-title {
@@ -179,16 +187,19 @@ input:focus {
   .form-container,
   .answer-container,
   .first-container {
-    width: 100%;
+    width: 90vw;
     max-width: none;
   }
   .btn {
     min-width: 30vw;
   }
-
+  .first-container {
+    margin-top: 80px;
+    padding-top: 20px;
+  }
   .about-container {
     width: 100%;
     max-width: none;
-    margin-top: 2vh;
+    border: none;
   }
 }
