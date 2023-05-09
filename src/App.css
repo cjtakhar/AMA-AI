@@ -180,18 +180,6 @@ input:focus {
   color: white;
 }
 
-@media only screen and (max-width: 1250px) {
-  .form-container,
-  .answer-container,
-  .first-container {
-    width: 90%;
-    max-width: none;
-  }
-  .btn {
-    min-width: 40vw;
-  }
-}
-
 @media only screen and (max-width: 980px) {
   .form-container,
   .answer-container,
@@ -204,11 +192,23 @@ input:focus {
   }
 }
 
+@media only screen and (max-width: 980px) {
+  .form-container,
+  .answer-container,
+  .first-container {
+    width: 95%;
+    max-width: none;
+  }
+  .btn {
+    min-width: 30vw;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .form-container,
   .answer-container,
   .first-container {
-    width: 90%;
+    width: 100%;
     max-width: none;
   }
   .btn {
