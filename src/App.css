@@ -184,7 +184,7 @@ input:focus {
   .form-container,
   .answer-container,
   .first-container {
-    width: 95%;
+    width: 100%;
     max-width: none;
   }
   .btn {
@@ -219,6 +219,6 @@ input:focus {
   }
 
   .text-container {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3) !important;
   }
 }
