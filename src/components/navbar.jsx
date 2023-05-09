@@ -31,6 +31,3 @@ export default function NavBar() {
     </Navbar>
   );
 }
-
-
-
