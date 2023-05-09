@@ -11,10 +11,12 @@ body {
 .nav-brand {
   color: white;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .nav-link {
   color: white;
+  font-weight: bold;
 }
 
 .title {
@@ -38,12 +40,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: solid 1px black;
   border-radius: 25px;
   width: 60vw;
   max-width: 50vw;
   margin: 2rem 0;
   padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .form {
@@ -56,13 +58,14 @@ body {
 .text-container {
   width: 100%;
   height: 10vh;
-  border: solid 1px black;
+  border: none;
   border-radius: 25px;
   font-size: 1.5rem;
   font-weight: 100;
   margin: 2% 0;
   padding: 0.5rem; /* Add some padding to all sides */
   text-indent: 2%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .text-container:focus::placeholder {
@@ -76,19 +79,23 @@ input:focus {
 .btn {
   background-color: teal;
   border: none;
+  border-radius: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
   color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
+  cursor: pointer;
   display: inline-block;
   font-size: 1.5rem;
   margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 25px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.3s ease-in-out;
   width: 15vw;
+  font-weight: bold;
 }
 
 .btn:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   background-color: teal;
   color: white;
 }
@@ -97,12 +104,12 @@ input:focus {
   width: 50vw;
   max-width: 70vw; /* Add a max-width for larger screens */
   height: auto;
-  border: solid 1px black;
   border-radius: 25px;
   margin: 2vh 0;
   padding: 2rem;
   font-weight: 300;
   overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .answer {
@@ -163,9 +170,9 @@ input:focus {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   color: black;
-  border: solid 1px;
   border-radius: 15px;
   padding: 2vh;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 .contact-title:hover {
