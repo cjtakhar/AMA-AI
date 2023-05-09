@@ -187,7 +187,7 @@ input:focus {
   .form-container,
   .answer-container,
   .first-container {
-    width: 90vw;
+    width: 95vw;
     max-width: none;
   }
   .btn {
