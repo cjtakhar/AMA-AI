@@ -180,11 +180,23 @@ input:focus {
   color: white;
 }
 
+@media only screen and (max-width: 1250px) {
+  .form-container,
+  .answer-container,
+  .first-container {
+    width: 90%;
+    max-width: none;
+  }
+  .btn {
+    min-width: 40vw;
+  }
+}
+
 @media only screen and (max-width: 980px) {
   .form-container,
   .answer-container,
   .first-container {
-    width: 100%;
+    width: 90%;
     max-width: none;
   }
   .btn {
@@ -196,7 +208,7 @@ input:focus {
   .form-container,
   .answer-container,
   .first-container {
-    width: 95vw;
+    width: 90%;
     max-width: none;
   }
   .btn {
